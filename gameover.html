@@ -26,6 +26,65 @@
 
     <input id="startButton" type="button" value="Start again">
 
+    
+    <button>On music</button>
+    <audio id="myaudio" autoplay loop hidden>
+      <source src="gameover.ogg" type="audio/mpeg"/>
+    </audio>
+
+
+    <script>
+        var context;
+        window.onload = function() {
+            context = new AudioContext();
+            context.onstatechange = function() {
+                //if you have permissions, the audioContext will transition to 'running' immediately
+                if (context.state == 'running') {
+                    play();
+                }
+            }
+        };
+
+        function play() {
+            //ensure the promise is handled here
+            var promise = document.getElementById('myaudio').play();
+            if (promise !== undefined) {
+                promise.then(_ => {
+                    console.log("playing");
+                }).catch(error => {
+                    // Autoplay was prevented.
+                });
+            }
+        }
+
+        //play after the user interacts with the page
+        document.querySelector('button').addEventListener('click', function() {
+            context.resume().then(function() {
+                play();
+            });
+        });
+    </script>
+
+
+
+
+
+    <!--Timer Countdown-->
+
+    <!-- onload function is evoke when page is load -->
+    <!--countdown function is called when page is loaded -->
+
+    <!--
+        
+    <body onload="countdown(); ">
+        <div>
+            Time Left::
+            <input id="minutes " type="text " style="width: 10px; ">
+            <font size="5 "> : </font>
+            <input id="seconds " type="text " style="width: 20px; ">
+        </div>
+    </body>
+-->
 
     <script src="script.js"></script>
 </body>
