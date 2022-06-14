@@ -1,0 +1,100 @@
+        .box {
+            margin-top: 100px;
+            margin-left: 20px;
+            padding-top: 10px;
+            width: 1200px;
+            height: 500px;
+            background-color: rgb(228, 141, 141);
+            border: 10px solid rgb(6, 6, 7);
+            text-align: center;
+            font-size: 60px;
+        }
+        
+        #startButton {
+            background: steelblue;
+            border-radius: 5px;
+            height: 40px;
+            width: 150px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border: 2px solid black;
+            position: relative;
+            left: 45%;
+            top: -300px;
+        }
+        
+        #startButton:focus {
+            outline: 0;
+        }
+        
+        #startButton {
+            box-shadow: 0 2px #999;
+        }
+        
+        #startButton:hover {
+            background-color: rgb(119, 119, 119)
+        }
+        
+        #startButton:active {
+            background-color: rgb(96, 78, 177);
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        
+        #wheel-three {
+            width: 48px;
+            height: 48px;
+            background-image: url(wheel-two.png);
+            position: relative;
+            top: -250px;
+            left: 620px;
+            animation: wheel-three 6000ms infinite linear;
+        }
+        
+        @keyframes wheel-three {
+            0% {
+                left: 620px;
+            }
+            100% {
+                transform: rotate(-180deg);
+            }
+        }
+        
+        #wheel {
+            width: 48px;
+            height: 48px;
+            background-image: url(wheel-two.png);
+            position: relative;
+            top: -297px;
+            left: 690px;
+            animation: wheel 6000ms infinite linear;
+        }
+        
+        @keyframes wheel {
+            0% {
+                left: 690px;
+            }
+            100% {
+                transform: rotate(-180deg);
+            }
+        }
+        
+        #block {
+            width: 48px;
+            height: 48px;
+            background-image: url(wheel-two.png);
+            position: relative;
+            top: -345px;
+            left: 550px;
+            animation: block 6000ms infinite linear;
+        }
+        
+        @keyframes block {
+            0% {
+                left: 550px;
+            }
+            100% {
+                transform: rotate(-180deg);
+            }
+        }

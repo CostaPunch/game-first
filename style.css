@@ -1,0 +1,305 @@
+                      #game {
+                          width: 1250px;
+                          height: 200px;
+                          border: 1px solid black;
+                          background-color: rgb(68, 222, 228);
+                      }
+                      
+                      .box {
+                          width: 1250px;
+                          height: 5px;
+                          background-color: black;
+                          position: absolute;
+                          left: 0px;
+                          bottom: 290px;
+                      }
+                      
+                      #man {
+                          width: 48px;
+                          height: 48px;
+                          Background-image: url(man.gif);
+                          position: relative;
+                          top: 50px;
+                          left: 200px;
+                      }
+                      
+                      #second {
+                          Background-image: url(gameover.html);
+                      }
+                      
+                      .animate {
+                          animation: jump 1000ms;
+                      }
+                      
+                      @keyframes jump {
+                          0% {
+                              top: -50px;
+                          }
+                          30% {
+                              top: -20px;
+                          }
+                          70% {
+                              top: -20px;
+                          }
+                          100% {
+                              top: -50px;
+                          }
+                      }
+                      
+                      #tree {
+                          width: 64px;
+                          height: 64px;
+                          background-image: url(tree.png);
+                          position: relative;
+                          top: 180px;
+                          left: 900px;
+                          animation: block 9500ms infinite linear;
+                      }
+                      
+                      #character {
+                          width: 64px;
+                          height: 64px;
+                          background-image: url(cactus.png);
+                          position: relative;
+                          top: 60px;
+                          left: 500px;
+                          animation: character 8500ms infinite linear;
+                      }
+                      
+                      @keyframes character {
+                          0% {
+                              left: 700px;
+                          }
+                          100% {
+                              left: -40px;
+                          }
+                      }
+                      
+                      #cactus {
+                          width: 64px;
+                          height: 64px;
+                          background-image: url(cactus.png);
+                          position: relative;
+                          top: 310px;
+                          left: 1000px;
+                          animation: block 6500ms infinite linear;
+                      }
+                      
+                      @keyframes block {
+                          0% {
+                              left: 1000px;
+                          }
+                          100% {
+                              left: -40px;
+                          }
+                      }
+                      
+                      #sun {
+                          width: 80px;
+                          height: 80px;
+                          background-image: url(sun.png);
+                          position: relative;
+                          top: -380px;
+                          left: 100px;
+                          background-repeat: no-repeat;
+                          animation: sun 9000ms infinite linear;
+                      }
+                      
+                      @keyframes sun {
+                          0% {
+                              left: 0px;
+                          }
+                          100% {
+                              left: 1000px;
+                              transform: translateX(150%) rotate(180deg) scale(.5);
+                          }
+                      }
+                      
+                      #clouds {
+                          width: 100px;
+                          height: 100px;
+                          background-image: url(clouds.png);
+                          position: relative;
+                          top: -480px;
+                          left: 160px;
+                          background-repeat: no-repeat;
+                          animation: clouds 20000ms infinite linear;
+                      }
+                      
+                      @keyframes clouds {
+                          0% {
+                              left: 1000px;
+                          }
+                          100% {
+                              left: 0px;
+                          }
+                      }
+                      
+                      #wheel {
+                          width: 48px;
+                          height: 48px;
+                          background-image: url(wheel-two.png);
+                          position: relative;
+                          top: 200px;
+                          left: 900px;
+                          animation: wheel 4500ms infinite linear;
+                      }
+                      
+                      #block {
+                          width: 48px;
+                          height: 48px;
+                          background-image: url(wheel-two.png);
+                          position: relative;
+                          top: 150px;
+                          left: 900px;
+                          animation: wheel 10000ms infinite linear;
+                      }
+                      
+                      @keyframes wheel {
+                          0% {
+                              left: 900px;
+                          }
+                          100% {
+                              left: -40px;
+                              transform: translateX(150%) rotate(-180deg);
+                          }
+                      }
+                      
+                      #car {
+                          width: 180px;
+                          height: 180px;
+                          background-image: url(car.gif);
+                          position: relative;
+                          top: -290px;
+                          left: 1065px;
+                          background-repeat: no-repeat;
+                      }
+                      
+                      #wheel-three {
+                          width: 48px;
+                          height: 48px;
+                          background-image: url(wheel-two.png);
+                          position: relative;
+                          top: 100px;
+                          left: 1000px;
+                          animation: wheel-three 6000ms infinite linear;
+                      }
+                      
+                      @keyframes wheel-three {
+                          0% {
+                              left: 1000px;
+                          }
+                          100% {
+                              transform: rotate(-180deg);
+                          }
+                      }
+                      
+                      .timer {
+                          color: blue;
+                          font-size: 30px;
+                          font-weight: bold;
+                          position: relative;
+                          left: 1150px;
+                      }
+                      
+                      @media screen and (max-width: 1024px) {
+                          #game {
+                              width: 1000px;
+                              height: 200px;
+                              border: 1px solid black;
+                              background-color: rgb(68, 222, 228);
+                          }
+                          .box {
+                              width: 1000px;
+                              height: 5px;
+                              background-color: black;
+                              position: absolute;
+                              left: 0px;
+                              bottom: 90px;
+                          }
+                          #car {
+                              width: 180px;
+                              height: 180px;
+                              background-image: url(car.gif);
+                              position: relative;
+                              top: -290px;
+                              left: 800px;
+                              background-repeat: no-repeat;
+                          }
+                          #wheel-three {
+                              width: 48px;
+                              height: 48px;
+                              background-image: url(wheel-two.png);
+                              position: relative;
+                              top: 100px;
+                              left: 740px;
+                              animation: wheel-three 6000ms infinite linear;
+                          }
+                          @keyframes wheel-three {
+                              0% {
+                                  left: 740px;
+                              }
+                              100% {
+                                  transform: rotate(-180deg);
+                              }
+                          }
+                          .timer {
+                              color: blue;
+                              font-size: 30px;
+                              font-weight: bold;
+                              position: relative;
+                              left: 900px;
+                          }
+                          #sun {
+                              width: 80px;
+                              height: 80px;
+                              background-image: url(sun.png);
+                              position: relative;
+                              top: -380px;
+                              left: 100px;
+                              background-repeat: no-repeat;
+                              animation: sun 9000ms infinite linear;
+                          }
+                          @keyframes sun {
+                              0% {
+                                  left: 0px;
+                              }
+                              100% {
+                                  left: 900px;
+                                  transform: translateX(150%) rotate(180deg) scale(.5);
+                              }
+                          }
+                          #clouds {
+                              width: 100px;
+                              height: 100px;
+                              background-image: url(clouds.png);
+                              position: relative;
+                              top: -480px;
+                              left: 160px;
+                              background-repeat: no-repeat;
+                              animation: clouds 20000ms infinite linear;
+                          }
+                          @keyframes clouds {
+                              0% {
+                                  left: 900px;
+                              }
+                              100% {
+                                  left: 0px;
+                              }
+                          }
+                      }
+                      /*#minutes {
+
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+#seconds {
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+*/
